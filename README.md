@@ -1,6 +1,6 @@
 # a-blog cms でAMP対応するテンプレートの配布
 
-個人ブログ用に [a-blog cms](http://www.a-blogcms.jp/) で[AMP](https://www.ampproject.org/)対応できるテンプレートを作成し、公開しています。
+個人ブログでAMP対応する際に、[a-blog cms](http://www.a-blogcms.jp/) で[AMP](https://www.ampproject.org/)対応できるテンプレートを作成したため、公開しています。
 CSSや機能は最低限なものを用意していますので、カスタマイズして使用されることをおすすめしています。
 
 
@@ -8,7 +8,7 @@ CSSや機能は最低限なものを用意していますので、カスタマ�
 方法としては、対応したいテーマのディレクトリにamp.html、/css/フォルダ、/include/フォルダ、/vars/フォルダを設置してください。
 
 ### 要変更箇所
-- コンテンツ元のページ：rel="amphtml"を記述する ※1
+- コンテンツ元のページ：<code>rel="amphtml"</code>を記述する ※1
 - amp.html：「◯◯」と記述されている箇所をご自身のサイトの情報に変更する
 - amp.html：18行目の@type
 - モジュールID：relational_entry（Entry_TagRelational）の作成
