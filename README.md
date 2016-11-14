@@ -1,4 +1,4 @@
-# a-blog cms でAMP対応するテンプレートの配布
+# a-blog cmsでAMP対応するためのテンプレート
 
 個人ブログでAMP対応する際に、[a-blog cms](http://www.a-blogcms.jp/) で[AMP](https://www.ampproject.org/)対応できるテンプレートを作成したため、公開しています。
 CSSや機能は最低限なものを用意していますので、カスタマイズして使用されることをおすすめしています。
