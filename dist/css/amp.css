@@ -1,0 +1,1448 @@
+/* 基本設定
+============================== */
+body {
+	background-color: white;
+	color: #333;
+	font-family: "Helvetica Neue", Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+amp-img {
+	background-color: gray;
+}
+
+a {
+	color: #428BCA;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: #2A6496;
+	text-decoration: underline;
+}
+
+a:focus {
+	outline: thin dotted #333;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+
+/* acms.css 設定
+============================== */
+/* ------------------------------
+ グリッドシステム
+------------------------------- */
+.acms-container {
+	max-width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	box-sizing: border-box;
+}
+
+.acms-grid,
+.acms-grid-r {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.acms-grid:before,
+.acms-grid:after,
+.acms-grid-r:before,
+.acms-grid-r:after {
+	content: " ";
+	display: table;
+}
+.acms-grid:after,
+.acms-grid-r:after {
+	clear: both;
+}
+
+.acms-grid-negative {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+[class*="acms-col"] {
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+	.acms-grid,
+	.acms-grid-r {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	[class*="acms-col"] {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+[class*="acms-col"],
+[class*="acms-col"]:before,
+[class*="acms-col"]:after {
+	box-sizing: border-box;
+}
+
+.acms-col-1 {
+	float: left;
+	width: 8.33333%;
+}
+
+.acms-col-2 {
+	float: left;
+	width: 16.66667%;
+}
+
+.acms-col-3 {
+	float: left;
+	width: 25%;
+}
+
+.acms-col-4 {
+	float: left;
+	width: 33.33333%;
+}
+
+.acms-col-5 {
+	float: left;
+	width: 41.66667%;
+}
+
+.acms-col-6 {
+	float: left;
+	width: 50%;
+}
+
+.acms-col-7 {
+	float: left;
+	width: 58.33333%;
+}
+
+.acms-col-8 {
+	float: left;
+	width: 66.66667%;
+}
+
+.acms-col-9 {
+	float: left;
+	width: 75%;
+}
+
+.acms-col-10 {
+	float: left;
+	width: 83.33333%;
+}
+
+.acms-col-11 {
+	float: left;
+	width: 91.66667%;
+}
+
+.acms-col-12 {
+	float: none;
+	width: 100%;
+}
+
+[class*="acms-push"],
+[class*="acms-pull"] {
+	position: relative;
+}
+
+.acms-push-1 {
+	left: 8.33333%;
+}
+
+.acms-push-2 {
+	left: 16.66667%;
+}
+
+.acms-push-3 {
+	left: 25%;
+}
+
+.acms-push-4 {
+	left: 33.33333%;
+}
+
+.acms-push-5 {
+	left: 41.66667%;
+}
+
+.acms-push-6 {
+	left: 50%;
+}
+
+.acms-push-7 {
+	left: 58.33333%;
+}
+
+.acms-push-8 {
+	left: 66.66667%;
+}
+
+.acms-push-9 {
+	left: 75%;
+}
+
+.acms-push-10 {
+	left: 83.33333%;
+}
+
+.acms-push-11 {
+	left: 91.66667%;
+}
+
+.acms-pull-1 {
+	right: 8.33333%;
+}
+
+.acms-pull-2 {
+	right: 16.66667%;
+}
+
+.acms-pull-3 {
+	right: 25%;
+}
+
+.acms-pull-4 {
+	right: 33.33333%;
+}
+
+.acms-pull-5 {
+	right: 41.66667%;
+}
+
+.acms-pull-6 {
+	right: 50%;
+}
+
+.acms-pull-7 {
+	right: 58.33333%;
+}
+
+.acms-pull-8 {
+	right: 66.66667%;
+}
+
+.acms-pull-9 {
+	right: 75%;
+}
+
+.acms-pull-10 {
+	right: 83.33333%;
+}
+
+.acms-pull-11 {
+	right: 91.66667%;
+}
+
+@media (min-width: 480px) {
+	.acms-col-sm-1 {
+		float: left;
+		width: 8.33333%;
+	}
+	.acms-col-sm-2 {
+		float: left;
+		width: 16.66667%;
+	}
+	.acms-col-sm-3 {
+		float: left;
+		width: 25%;
+	}
+	.acms-col-sm-4 {
+		float: left;
+		width: 33.33333%;
+	}
+	.acms-col-sm-5 {
+		float: left;
+		width: 41.66667%;
+	}
+	.acms-col-sm-6 {
+		float: left;
+		width: 50%;
+	}
+	.acms-col-sm-7 {
+		float: left;
+		width: 58.33333%;
+	}
+	.acms-col-sm-8 {
+		float: left;
+		width: 66.66667%;
+	}
+	.acms-col-sm-9 {
+		float: left;
+		width: 75%;
+	}
+	.acms-col-sm-10 {
+		float: left;
+		width: 83.33333%;
+	}
+	.acms-col-sm-11 {
+		float: left;
+		width: 91.66667%;
+	}
+	.acms-col-sm-12 {
+		float: none;
+		width: 100%;
+	}
+	[class*="acms-push-sm"] {
+		position: relative;
+		right: auto;
+	}
+	.acms-push-sm-auto {
+		left: auto;
+	}
+	.acms-push-sm-1 {
+		left: 8.33333%;
+	}
+	.acms-push-sm-2 {
+		left: 16.66667%;
+	}
+	.acms-push-sm-3 {
+		left: 25%;
+	}
+	.acms-push-sm-4 {
+		left: 33.33333%;
+	}
+	.acms-push-sm-5 {
+		left: 41.66667%;
+	}
+	.acms-push-sm-6 {
+		left: 50%;
+	}
+	.acms-push-sm-7 {
+		left: 58.33333%;
+	}
+	.acms-push-sm-8 {
+		left: 66.66667%;
+	}
+	.acms-push-sm-9 {
+		left: 75%;
+	}
+	.acms-push-sm-10 {
+		left: 83.33333%;
+	}
+	.acms-push-sm-11 {
+		left: 91.66667%;
+	}
+	[class*="acms-pull-sm"] {
+		position: relative;
+		left: auto;
+	}
+	.acms-pull-sm-auto {
+		right: auto;
+	}
+	.acms-pull-sm-1 {
+		right: 8.33333%;
+	}
+	.acms-pull-sm-2 {
+		right: 16.66667%;
+	}
+	.acms-pull-sm-3 {
+		right: 25%;
+	}
+	.acms-pull-sm-4 {
+		right: 33.33333%;
+	}
+	.acms-pull-sm-5 {
+		right: 41.66667%;
+	}
+	.acms-pull-sm-6 {
+		right: 50%;
+	}
+	.acms-pull-sm-7 {
+		right: 58.33333%;
+	}
+	.acms-pull-sm-8 {
+		right: 66.66667%;
+	}
+	.acms-pull-sm-9 {
+		right: 75%;
+	}
+	.acms-pull-sm-10 {
+		right: 83.33333%;
+	}
+	.acms-pull-sm-11 {
+		right: 91.66667%;
+	}
+}
+
+@media (min-width: 768px) {
+	.acms-col-md-1 {
+		float: left;
+		width: 8.33333%;
+	}
+	.acms-col-md-2 {
+		float: left;
+		width: 16.66667%;
+	}
+	.acms-col-md-3 {
+		float: left;
+		width: 25%;
+	}
+	.acms-col-md-4 {
+		float: left;
+		width: 33.33333%;
+	}
+	.acms-col-md-5 {
+		float: left;
+		width: 41.66667%;
+	}
+	.acms-col-md-6 {
+		float: left;
+		width: 50%;
+	}
+	.acms-col-md-7 {
+		float: left;
+		width: 58.33333%;
+	}
+	.acms-col-md-8 {
+		float: left;
+		width: 66.66667%;
+	}
+	.acms-col-md-9 {
+		float: left;
+		width: 75%;
+	}
+	.acms-col-md-10 {
+		float: left;
+		width: 83.33333%;
+	}
+	.acms-col-md-11 {
+		float: left;
+		width: 91.66667%;
+	}
+	.acms-col-md-12 {
+		float: none;
+		width: 100%;
+	}
+	[class*="acms-push-md"] {
+		position: relative;
+		right: auto;
+	}
+	.acms-push-md-auto {
+		left: auto;
+	}
+	.acms-push-md-1 {
+		left: 8.33333%;
+	}
+	.acms-push-md-2 {
+		left: 16.66667%;
+	}
+	.acms-push-md-3 {
+		left: 25%;
+	}
+	.acms-push-md-4 {
+		left: 33.33333%;
+	}
+	.acms-push-md-5 {
+		left: 41.66667%;
+	}
+	.acms-push-md-6 {
+		left: 50%;
+	}
+	.acms-push-md-7 {
+		left: 58.33333%;
+	}
+	.acms-push-md-8 {
+		left: 66.66667%;
+	}
+	.acms-push-md-9 {
+		left: 75%;
+	}
+	.acms-push-md-10 {
+		left: 83.33333%;
+	}
+	.acms-push-md-11 {
+		left: 91.66667%;
+	}
+	[class*="acms-pull-md"] {
+		position: relative;
+		left: auto;
+	}
+	.acms-pull-md-auto {
+		right: auto;
+	}
+	.acms-pull-md-1 {
+		right: 8.33333%;
+	}
+	.acms-pull-md-2 {
+		right: 16.66667%;
+	}
+	.acms-pull-md-3 {
+		right: 25%;
+	}
+	.acms-pull-md-4 {
+		right: 33.33333%;
+	}
+	.acms-pull-md-5 {
+		right: 41.66667%;
+	}
+	.acms-pull-md-6 {
+		right: 50%;
+	}
+	.acms-pull-md-7 {
+		right: 58.33333%;
+	}
+	.acms-pull-md-8 {
+		right: 66.66667%;
+	}
+	.acms-pull-md-9 {
+		right: 75%;
+	}
+	.acms-pull-md-10 {
+		right: 83.33333%;
+	}
+	.acms-pull-md-11 {
+		right: 91.66667%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.acms-col-lg-1 {
+		float: left;
+		width: 8.33333%;
+	}
+	.acms-col-lg-2 {
+		float: left;
+		width: 16.66667%;
+	}
+	.acms-col-lg-3 {
+		float: left;
+		width: 25%;
+	}
+	.acms-col-lg-4 {
+		float: left;
+		width: 33.33333%;
+	}
+	.acms-col-lg-5 {
+		float: left;
+		width: 41.66667%;
+	}
+	.acms-col-lg-6 {
+		float: left;
+		width: 50%;
+	}
+	.acms-col-lg-7 {
+		float: left;
+		width: 58.33333%;
+	}
+	.acms-col-lg-8 {
+		float: left;
+		width: 66.66667%;
+	}
+	.acms-col-lg-9 {
+		float: left;
+		width: 75%;
+	}
+	.acms-col-lg-10 {
+		float: left;
+		width: 83.33333%;
+	}
+	.acms-col-lg-11 {
+		float: left;
+		width: 91.66667%;
+	}
+	.acms-col-lg-12 {
+		float: none;
+		width: 100%;
+	}
+	[class*="acms-push-lg"] {
+		position: relative;
+		right: auto;
+	}
+	.acms-push-lg-auto {
+		left: auto;
+	}
+	.acms-push-lg-1 {
+		left: 8.33333%;
+	}
+	.acms-push-lg-2 {
+		left: 16.66667%;
+	}
+	.acms-push-lg-3 {
+		left: 25%;
+	}
+	.acms-push-lg-4 {
+		left: 33.33333%;
+	}
+	.acms-push-lg-5 {
+		left: 41.66667%;
+	}
+	.acms-push-lg-6 {
+		left: 50%;
+	}
+	.acms-push-lg-7 {
+		left: 58.33333%;
+	}
+	.acms-push-lg-8 {
+		left: 66.66667%;
+	}
+	.acms-push-lg-9 {
+		left: 75%;
+	}
+	.acms-push-lg-10 {
+		left: 83.33333%;
+	}
+	.acms-push-lg-11 {
+		left: 91.66667%;
+	}
+	[class*="acms-pull-lg"] {
+		position: relative;
+		left: auto;
+	}
+	.acms-pull-lg-auto {
+		right: auto;
+	}
+	.acms-pull-lg-1 {
+		right: 8.33333%;
+	}
+	.acms-pull-lg-2 {
+		right: 16.66667%;
+	}
+	.acms-pull-lg-3 {
+		right: 25%;
+	}
+	.acms-pull-lg-4 {
+		right: 33.33333%;
+	}
+	.acms-pull-lg-5 {
+		right: 41.66667%;
+	}
+	.acms-pull-lg-6 {
+		right: 50%;
+	}
+	.acms-pull-lg-7 {
+		right: 58.33333%;
+	}
+	.acms-pull-lg-8 {
+		right: 66.66667%;
+	}
+	.acms-pull-lg-9 {
+		right: 75%;
+	}
+	.acms-pull-lg-10 {
+		right: 83.33333%;
+	}
+	.acms-pull-lg-11 {
+		right: 91.66667%;
+	}
+}
+
+@media (min-width: 1440px) {
+	.acms-col-xl-1 {
+		float: left;
+		width: 8.33333%;
+	}
+	.acms-col-xl-2 {
+		float: left;
+		width: 16.66667%;
+	}
+	.acms-col-xl-3 {
+		float: left;
+		width: 25%;
+	}
+	.acms-col-xl-4 {
+		float: left;
+		width: 33.33333%;
+	}
+	.acms-col-xl-5 {
+		float: left;
+		width: 41.66667%;
+	}
+	.acms-col-xl-6 {
+		float: left;
+		width: 50%;
+	}
+	.acms-col-xl-7 {
+		float: left;
+		width: 58.33333%;
+	}
+	.acms-col-xl-8 {
+		float: left;
+		width: 66.66667%;
+	}
+	.acms-col-xl-9 {
+		float: left;
+		width: 75%;
+	}
+	.acms-col-xl-10 {
+		float: left;
+		width: 83.33333%;
+	}
+	.acms-col-xl-11 {
+		float: left;
+		width: 91.66667%;
+	}
+	.acms-col-xl-12 {
+		float: none;
+		width: 100%;
+	}
+	[class*="acms-push-xl"] {
+		position: relative;
+		right: auto;
+	}
+	.acms-push-xl-auto {
+		left: auto;
+	}
+	.acms-push-xl-1 {
+		left: 8.33333%;
+	}
+	.acms-push-xl-2 {
+		left: 16.66667%;
+	}
+	.acms-push-xl-3 {
+		left: 25%;
+	}
+	.acms-push-xl-4 {
+		left: 33.33333%;
+	}
+	.acms-push-xl-5 {
+		left: 41.66667%;
+	}
+	.acms-push-xl-6 {
+		left: 50%;
+	}
+	.acms-push-xl-7 {
+		left: 58.33333%;
+	}
+	.acms-push-xl-8 {
+		left: 66.66667%;
+	}
+	.acms-push-xl-9 {
+		left: 75%;
+	}
+	.acms-push-xl-10 {
+		left: 83.33333%;
+	}
+	.acms-push-xl-11 {
+		left: 91.66667%;
+	}
+	[class*="acms-pull-xl"] {
+		position: relative;
+		left: auto;
+	}
+	.acms-pull-xl-auto {
+		right: auto;
+	}
+	.acms-pull-xl-1 {
+		right: 8.33333%;
+	}
+	.acms-pull-xl-2 {
+		right: 16.66667%;
+	}
+	.acms-pull-xl-3 {
+		right: 25%;
+	}
+	.acms-pull-xl-4 {
+		right: 33.33333%;
+	}
+	.acms-pull-xl-5 {
+		right: 41.66667%;
+	}
+	.acms-pull-xl-6 {
+		right: 50%;
+	}
+	.acms-pull-xl-7 {
+		right: 58.33333%;
+	}
+	.acms-pull-xl-8 {
+		right: 66.66667%;
+	}
+	.acms-pull-xl-9 {
+		right: 75%;
+	}
+	.acms-pull-xl-10 {
+		right: 83.33333%;
+	}
+	.acms-pull-xl-11 {
+		right: 91.66667%;
+	}
+}
+
+.acms-entry .acms-col-12 {
+	clear: both;
+}
+
+/* ------------------------------
+ ユニットグループ
+------------------------------- */
+.clearHidden {
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	margin: 0;
+	border: none;
+}
+
+/* ---------------
+ 動的フォーム
+--------------- */
+/* ---------------
+ エントリー内 主な要素
+--------------- */
+.acms-entry {
+	/* ユニットの要素の位置調整 */
+}
+.acms-entry [class*=acms-col-] {
+	padding: 0;
+}
+.acms-entry h2,
+.acms-entry h3,
+.acms-entry h4,
+.acms-entry h5,
+.acms-entry h6,
+.acms-entry dl {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.acms-entry p {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.acms-entry .entry-container {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.acms-entry blockquote {
+	margin: 0 0 15px 0;
+	padding: 10px 20px;
+	border-left: solid 5px #CCC;
+}
+
+/* ---------------
+ 各コンテンツ(画像、地図、動画など)表示設定
+--------------- */
+/* 添付画像配置（おまかせ） */
+/* 添付画像配置（左） */
+.column-image-left,
+.column-media-left {
+	display: inline;
+	float: left;
+	margin-bottom: 15px;
+}
+
+/* 添付画像配置（右） */
+.column-image-right,
+.column-media-right {
+	display: inline;
+	float: right;
+	margin-bottom: 15px;
+}
+
+/* 添付画像配置（中央） */
+.column-image-center,
+.column-media-center {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+/* ファイル配置（おまかせ） */
+/* ファイル配置（左） */
+.column-file-left {
+	display: inline;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+.column-file-left + .caption {
+	text-align: left;
+}
+
+/* ファイル配置（右） */
+.column-file-right {
+	display: inline;
+	float: right;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+.column-file-right + .caption {
+	text-align: right;
+}
+
+/* ファイル配置（中央） */
+.column-file-center {
+	float: none;
+	margin-right: auto;
+	margin-bottom: 15px;
+	margin-left: auto;
+	text-align: center;
+}
+.column-file-center + .caption {
+	text-align: center;
+}
+
+/* 地図配置（おまかせ） */
+.column-map-auto {
+	margin-bottom: 15px;
+}
+
+/* 地図配置（左） */
+.column-map-left {
+	float: left;
+	margin-bottom: 15px;
+}
+
+/* 地図配置（右） */
+.column-map-right {
+	float: right;
+	margin-bottom: 15px;
+}
+
+/* 地図配置（中央） */
+.column-map-center {
+	display: block;
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 15px;
+}
+
+/* yahoo地図配置（おまかせ） */
+.column-yolp-auto {
+	margin-bottom: 15px;
+}
+
+/* yahoo地図配置（左） */
+.column-yolp-left {
+	float: left;
+	margin-bottom: 15px;
+}
+
+/* yahoo地図配置（右） */
+.column-yolp-right {
+	float: right;
+	margin-bottom: 15px;
+}
+
+/* yahoo地図配置（中央） */
+.column-yolp-center {
+	display: block;
+	float: none;
+	margin-right: auto;
+	margin-bottom: 15px;
+	margin-left: auto;
+}
+
+/* YouTube配置 (おまかせ) */
+/* YouTube配置 (左) */
+.column-youtube-left,
+.column-video-left {
+	display: inline;
+	float: left;
+}
+
+/* YouTube配置 (右) */
+.column-youtube-right,
+.column-video-right {
+	display: inline;
+	float: right;
+}
+
+/* YouTube配置 (中央) */
+.column-youtube-center,
+.column-video-center {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* 画像URL配置（おまかせ） */
+/* 画像URL配置（左） */
+.column-eximage-left {
+	display: inline;
+	float: left;
+}
+
+/* 画像URL配置（右） */
+.column-eximage-right {
+	display: inline;
+	float: right;
+}
+
+/* 画像URL配置（中央） */
+.column-eximage-center {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+/* 引用配置（おまかせ） */
+/* 引用配置（左） */
+.column-quote-left {
+	float: left;
+}
+
+/* 引用配置（右） */
+.column-quote-right {
+	float: right;
+}
+
+.column-quote-center {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+[class*="column-quote-"] {
+	margin-left: 15px;
+	margin-right: 15px;
+	/* 引用ユニット画像 */
+	/* 引用ユニットテキスト */
+}
+[class*="column-quote-"] blockquote {
+	padding: 20px 10px 20px 20px;
+}
+[class*="column-quote-"] .quoteImageContainer {
+	position: relative;
+	float: left;
+	max-width: 154px;
+	margin-right: 25px;
+}
+[class*="column-quote-"] .quoteImage {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+[class*="column-quote-"] .quoteTitle {
+	margin: 0 0 5px 0;
+	padding: 0;
+	font-size: 18px;
+	line-height: 1.4;
+}
+[class*="column-quote-"] .quoteTitleLink {
+	color: #006CD8;
+}
+[class*="column-quote-"] .quoteSiteName {
+	margin: 0 0 10px 0;
+	padding: 0;
+	font-size: 11px;
+	color: #666;
+}
+[class*="column-quote-"] .quoteDescription {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	line-height: 1.6;
+	color: #333;
+}
+
+.acms-entry [class*="acms-col-"] .column-image-left,
+.acms-entry [class*="acms-col-"]
+.column-image-right,
+.acms-entry [class*="acms-col-"]
+.column-media-left,
+.acms-entry [class*="acms-col-"]
+.column-media-right,
+.acms-entry [class*="acms-col-"]
+.column-eximage-left,
+.acms-entry [class*="acms-col-"]
+.column-eximage-right,
+.acms-entry [class*="acms-col-"]
+.column-map-left,
+.acms-entry [class*="acms-col-"]
+.column-map-right,
+.acms-entry [class*="acms-col-"]
+.column-yolp-left,
+.acms-entry [class*="acms-col-"]
+.column-yolp-right,
+.acms-entry [class*="acms-col-"]
+.column-youtube-left,
+.acms-entry [class*="acms-col-"]
+.column-youtube-right,
+.acms-entry [class*="acms-col-"]
+.column-video-left,
+.acms-entry [class*="acms-col-"]
+.column-video-right,
+.acms-entry [class*="acms-col-"]
+.column-quote-left,
+.acms-entry [class*="acms-col-"]
+.column-quote-right {
+	float: none;
+}
+
+/* 画像の最大幅 */
+[class*="column-image-"],
+[class*="column-media-"] {
+	max-width: 100%;
+}
+
+/* メディア リンク */
+[class*="column-media-"] a {
+	display: block;
+	text-align: center;
+}
+
+/* ユニットのガターの間隔 */
+.acms-entry [class*="column-image-"],
+.acms-entry [class*="column-media-"],
+.acms-entry [class*="column-yolp-"],
+.acms-entry [class*="column-youtube-"],
+.acms-entry [class*="column-video-"],
+.acms-entry [class*="column-eximage-"] {
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+
+.acms-entry [class*="column-map-"] {
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+}
+.acms-entry [class*="column-map-"] > div {
+	max-width: 100%;
+}
+
+.acms-entry [class*="column-image-"],
+.acms-entry [class*="column-media-"],
+.acms-entry [class*="column-eximage-"] {
+	display: block;
+	margin-bottom: 15px;
+}
+.acms-entry [class*="column-image-"] a,
+.acms-entry [class*="column-media-"] a,
+.acms-entry [class*="column-eximage-"] a {
+	display: block;
+}
+.acms-entry [class*="column-image-"] .caption,
+.acms-entry [class*="column-media-"] .caption,
+.acms-entry [class*="column-eximage-"] .caption {
+	padding: 0;
+}
+
+.acms-entry [class*="column-image-"].nocaption,
+.acms-entry [class*="column-media-"].nocaption,
+.acms-entry [class*="column-eximage-"].nocaption,
+.acms-entry [class*="column-yolp-"],
+.acms-entry [class*="column-youtube-"],
+.acms-entry [class*="column-video-"] {
+	margin-bottom: 20px;
+}
+
+.acms-entry .column-image-auto,
+.acms-entry .column-media-auto,
+.acms-entry .column-eximage-auto,
+.acms-entry .column-yolp-auto,
+.acms-entry .column-youtube-auto,
+.acms-entry .column-video-auto {
+	float: none;
+}
+
+[class*="column-image-"] img,
+[class*="column-media-"] img,
+[class*="column-eximage-"] img {
+	width: auto\9;
+	height: auto;
+	max-width: 100%;
+}
+
+/* 画像左寄せ */
+.column-image-left,
+.column-media-left,
+.column-eximage-left {
+	float: left;
+}
+
+/* スマートフォンのときのエントリー内スタイル */
+@media (max-width: 479px) {
+	/* エントリー内画像サイズ */
+	.acms-entry [class*="column-image-"],
+	.acms-entry [class*="column-media-"],
+	.acms-entry [class*="column-eximage-"] {
+		float: none;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: auto ;
+	}
+	.acms-entry [class*="column-image-"] img,
+	.acms-entry [class*="column-media-"] img,
+	.acms-entry [class*="column-eximage-"] img {
+		padding: 0;
+		box-sizing: border-box;
+	}
+	[class*="column-map-"],
+	[class*="column-yolp-"] {
+		width: auto ;
+		max-width: 100%;
+	}
+	[class*="column-map-"] > div,
+	[class*="column-yolp-"] > div {
+		max-width: 100%;
+	}
+	[class*="column-yolp-"] > div {
+		width: 100% ;
+	}
+	[class*="column-eximage-"] {
+		width: auto ;
+	}
+	[class*="column-youtube-"],
+	[class*="column-video-"] {
+		display: block;
+		width: 100% ;
+		max-width: 100%;
+	}
+}
+
+.acms-entry-unit-full [class*="column-image-"],
+.acms-entry-unit-full [class*="column-media-"],
+.acms-entry-unit-full [class*="column-map-"],
+.acms-entry-unit-full [class*="column-eximage-"],
+.acms-entry-unit-full [class*="column-youtube-"],
+.acms-entry-unit-full [class*="column-video-"] {
+	width: auto ;
+	max-width: 100%;
+}
+
+/* YouTube動画をレスポンシブ対応させるための記述 */
+.column-youtube,
+.column-iframe {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-top: 30px;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+}
+.column-youtube iframe,
+.column-youtube object,
+.column-youtube embed,
+.column-iframe iframe,
+.column-iframe object,
+.column-iframe embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+[class*="column-map-"] > img {
+	max-width: 100%;
+}
+
+/* 地図ユニットのアイコンの調整 */
+[class*="column-map-"] img,
+[class*="column-yolp-"] img {
+	width: auto;
+	height: auto;
+}
+
+/* Yahoo地図 */
+[class*="column-yolp-"] {
+	width: auto ;
+}
+
+/* ---------------
+ ユニット
+--------------- */
+.entryFormColumnBody .entryFormFileentryFormImages,
+.entryFormColumnBody .formColumnMapTd {
+	padding-right: 10px ;
+}
+
+/* ---------------
+ 検索
+--------------- */
+/* 検索結果のハイライト
+---------------*/
+.highlight1 {
+	background-color: #FF6;
+	color: #000;
+}
+
+.highlight2 {
+	background-color: #A0FFFF;
+	color: #000;
+}
+
+.highlight3 {
+	background-color: #9F9;
+	color: #000;
+}
+
+.highlight4 {
+	background-color: #F99;
+	color: #000;
+}
+
+.highlight5 {
+	background-color: #F6F;
+	color: #000;
+}
+
+.highlight6 {
+	background-color: #800;
+	color: #000;
+}
+
+/* ユーティリティ */
+.acms-admin-clear {
+	clear: both;
+}
+
+/* サイトの 設定
+============================== */
+/* ナビゲーションの設定 */
+.global-nav {
+	margin: 0 15px;
+	border-bottom: 1px solid #EEE;
+}
+
+.site-name {
+	color: #999;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.site-name a {
+	color: #999;
+	text-decoration: none;
+}
+
+/* エントリーの設定 */
+.entry {
+	margin: 0 0 30px 0;
+	border-bottom: 1px solid #EEE;
+}
+
+.entry-title {
+	margin: 40px 0 15px;
+	padding: 0 0 15px 0;
+	line-height: 1.3;
+	font-size: 28px;
+	border-bottom: 1px solid #EEE;
+}
+
+.entry-time {
+	color: #999;
+	font-size: 14px;
+	line-height: 1.3;
+}
+
+/* ユニットの設定 */
+.entry-column p {
+	margin: 0 15px 20px 15px;
+	font-size: 18px;
+	line-height: 1.7;
+}
+
+.entry-column .caption {
+	margin: 10px 0 0 0;
+	color: #999;
+	font-size: 12px;
+}
+
+.entry-column code {
+	display: inline-block;
+	margin: 0 5px 0;
+	padding: 2px 4px;
+	color: #C7254E;
+	line-height: 1.2;
+	font-size: 90%;
+	background-color: #F9F2F4;
+	border-radius: 4px;
+	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+
+.entry-column h2 {
+	margin: 0 15px 15px 15px;
+	font-size: 28px;
+	line-height: 1.3;
+}
+
+.entry-column h3 {
+	margin: 0 15px 15px 15px;
+	font-size: 24px;
+	line-height: 1.3;
+}
+
+.entry-column h4 {
+	margin: 0 15px 15px 15px;
+	font-size: 20px;
+	line-height: 1.3;
+}
+
+.entry-column h5 {
+	margin: 0 15px 15px 15px;
+	font-size: 18px;
+	line-height: 1.3;
+}
+
+.entry-column ul {
+	margin: 0 15px 20px 15px;
+}
+
+.entry-column li {
+	line-height: 1.5;
+	font-size: 18px;
+}
+
+.entry-column ol {
+	margin: 0 15px 20px 15px;
+}
+
+.entry-column pre {
+	margin: 0 15px 20px 15px;
+	padding: 10px;
+	color: #FFF;
+	background: #222;
+	border-radius: 5px;
+	overflow: scroll;
+	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+
+.entry-column blockquote {
+	margin: 0 15px 20px 15px;
+	padding: 5px 0 5px 15px;
+	font-size: 18px;
+	line-height: 1.7;
+	border-left: 6px solid #EEE;
+}
+
+.entry-column dl {
+	margin: 0 15px 20px 15px;
+}
+
+.entry-column dt {
+	margin: 0 0 10px 0;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.2;
+}
+
+.entry-column dd {
+	margin: 0 0 10px 15px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.entry-column hr {
+	border: 0;
+	border-bottom: 1px solid #EEE;
+}
+
+.entry-column hr.clearHidden {
+	border: 0;
+}
+
+.section-side {
+	padding: 0 15px 15px 15px;
+}
+
+.list-related {
+	padding: 0 0 0 30px;
+}
+
+.list-related li {
+	line-height: 1.5;
+}

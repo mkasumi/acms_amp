@@ -1,0 +1,175 @@
+// 変数
+// ==============================
+$font-family: 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+$font-family-code: Monaco, Menlo, Consolas, "Courier New", monospace;
+
+/* 基本設定
+============================== */
+body {
+	background-color: white;
+	color: #333;
+	font-family: $font-family;
+}
+amp-img {
+	background-color: gray;
+}
+a {
+	color: #428bca;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: #2a6496;
+	text-decoration: underline;
+}
+
+a:focus {
+	outline: thin dotted #333;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+
+/* acms.css 設定
+============================== */
+@import "acms-base.scss";
+
+
+/* サイトの 設定
+============================== */
+/* ナビゲーションの設定 */
+.global-nav {
+	margin: 0 15px;
+	border-bottom: 1px solid #EEE;
+}
+.site-name {
+	color: #999;
+	font-weight: bold;
+	font-size: 20px;
+}
+.site-name a {
+	color: #999;
+	text-decoration: none;
+}
+
+/* エントリーの設定 */
+.entry {
+	margin: 0 0 30px 0;
+	border-bottom: 1px solid #EEE;
+}
+.entry-title {
+	margin: 40px 0 15px;
+	padding: 0 0 15px 0;
+	line-height: 1.3;
+	font-size: 28px;
+	border-bottom: 1px solid #EEE;
+}
+.entry-time {
+	color: #999;
+	font-size: 14px;
+	line-height: 1.3;
+}
+
+/* ユニットの設定 */
+.entry-column p {
+	margin: 0 ($grid-space / 2) 20px ($grid-space / 2);
+	font-size: 18px;
+	line-height: 1.7;
+}
+.entry-column .caption {
+	margin: 10px 0 0 0;
+	color: #999;
+	font-size: 12px;
+}
+.entry-column code {
+	display: inline-block;
+	margin: 0 5px 0;
+	padding: 2px 4px;
+	color: #c7254e;
+	line-height: 1.2;
+	font-size: 90%;
+	background-color: #f9f2f4;
+	border-radius: 4px;
+	font-family: $font-family-code;
+}
+.entry-column h2 {
+	margin: 0 ($grid-space / 2) 15px ($grid-space / 2);
+	font-size: 28px;
+	line-height: 1.3;
+}
+.entry-column h3 {
+	margin: 0 ($grid-space / 2) 15px ($grid-space / 2);
+	font-size: 24px;
+	line-height: 1.3;
+}
+.entry-column h4 {
+	margin: 0 ($grid-space / 2) 15px ($grid-space / 2);
+	font-size: 20px;
+	line-height: 1.3;
+}
+.entry-column h5 {
+	margin: 0 ($grid-space / 2) 15px ($grid-space / 2);
+	font-size: 18px;
+	line-height: 1.3;
+}
+.entry-column ul {
+	margin: 0 ($grid-space / 2) 20px ($grid-space / 2);
+}
+.entry-column li {
+	line-height: 1.5;
+	font-size: 18px;
+}
+.entry-column ol {
+	margin: 0 ($grid-space / 2) 20px ($grid-space / 2);
+}
+.entry-column pre {
+	margin: 0 ($grid-space / 2) 20px ($grid-space / 2);
+	padding: 10px;
+	color: #FFF;
+	background: #222;
+	border-radius: 5px;
+	overflow: scroll;
+	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+.entry-column blockquote {
+	margin: 0 ($grid-space / 2) 20px ($grid-space / 2);
+	padding: 5px 0 5px 15px;
+	font-size: 18px;
+	line-height: 1.7;
+	border-left: 6px solid #EEE;
+}
+.entry-column dl {
+	margin: 0 ($grid-space / 2) 20px ($grid-space / 2);
+}
+.entry-column dt {
+	margin: 0 0 10px 0;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.2;
+}
+.entry-column dd {
+	margin: 0 0 10px 15px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.entry-column hr {
+	border: 0;
+	border-bottom: 1px solid #EEE;
+}
+.entry-column hr.clearHidden {
+	border: 0;
+}
+
+// 関連エントリーのリスト
+// ===========================
+.section-side {
+	padding: 0 15px 15px 15px;
+}
+.list-related {
+	padding: 0 0 0 30px;
+}
+.list-related li {
+	line-height: 1.5;
+}
+

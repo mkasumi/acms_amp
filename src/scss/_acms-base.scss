@@ -1,0 +1,13 @@
+@import "acms/variable.scss";
+@import "acms/system-variable.scss";
+@import "acms/mixins.scss";
+
+// ユニット
+@import "acms/grid.scss";
+@import "acms/unit.scss";
+
+/* ユーティリティ */
+// ユニット内で使用
+.acms-admin-clear {
+	clear: both
+}

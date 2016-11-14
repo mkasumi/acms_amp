@@ -1,0 +1,7 @@
+.vagrant
+Berksfile.lock
+.DS_Store
+html/*
+!.gitkeep
+!.gitignore
+/node_modules/

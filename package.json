@@ -1,0 +1,26 @@
+{
+  "name": "acms_amp",
+  "version": "0.0.1",
+  "description": "a-blog cms でAMP対応をする",
+  "keywords": [
+    "CMS",
+    "AMP"
+  ],
+  "homepage": "http://mkasumi.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kasumi Morita",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.10"
+  }
+}
