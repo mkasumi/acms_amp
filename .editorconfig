@@ -1,1 +1,22 @@
-/Users/kasumi/Develop/Projects/acms-dev/html/git/ablogcms/.editorconfig
+root = true
+# 初めの行に記述する。この記述をすることで、フォルダ以下のディレクトリのみにルールが適用される
+
+#[*.css] // 適用したいファイルを指定
+#indent_style = space // シャープでコメントできる
+
+[*]
+# すべてのファイルに適用する
+charset = utf-8
+# 文字コードを統一
+indent_style = tab
+#インデントを統一する。「tab」か「 space」
+indent_size = 4
+# インデントの数を統一
+trim_trailing_whitespace = true
+# 行末のホワイトスペースを削除
+insert_final_newline = true
+# フォルダの最後の行に改行
+end_of_line = lf
+
+[*.php]
+indent_style = space
