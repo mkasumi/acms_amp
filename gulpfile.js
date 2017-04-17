@@ -13,7 +13,6 @@ var rename = require('gulp-rename'),
 	plumber = require('gulp-plumber'),
 	replace = require('gulp-replace');
 
-//cenecテーマ
 //SCSSファイルをCSSにコンパイルする
 gulp.task('sass', function () {
 	gulp.src(['src/scss/**/*.scss'])
@@ -52,7 +51,7 @@ gulp.task('min', function () {
 });
 
 
-//cenecの SCSSとCSSファイルを監視する
+//SCSSとCSSファイルを監視する
 gulp.task('watch', function() {
 	gulp.watch('src/scss/**/*.scss',['sass']);
 	gulp.watch('src/scss/amp.scss',['min']);
